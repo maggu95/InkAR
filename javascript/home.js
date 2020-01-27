@@ -12,8 +12,11 @@
   };
   // starter sammenkobling til Firebase
   firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
+  console.log(firebase); 
 
+
+  //Oppretter tabell i firebase 
+  var refMessage =  firebase.database().ref('TestTabell');
 
     //Starter prosessen hvor data legges inn i tabell
   function sendData(){
@@ -23,10 +26,14 @@
 
   console.log(listeNavn.value); 
   console.log(listeTekst.value); 
-
+  //Opretter objekt satt sammen av det vi skrev inn  
   var data = {
-    Liste_Navn: listenavn,
-    Liste: tekst
+    Liste_Navn: listeNavn,
+    Liste: listeTekst
   }
+
+  //Database.Push data til database
+  //ref.Message er variabelen med database og push er 
+  //en kommando fra firebase som dytter data til databasen
   refMessage.push(data);
 } 
