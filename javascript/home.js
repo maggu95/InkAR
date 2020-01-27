@@ -17,12 +17,12 @@
 
     //Starter prosessen hvor data legges inn i tabell
   function sendData(){
-  var listenavn = document.getElementById("tittel").value;
-  var tekst = document.getElementById("tekst").value;   
+  var listeNavn = document.getElementById("tittel").value;
+  var listeTekst = document.getElementById("tekst").value;   
 
 
-  console.log(listenavn.value); 
-  console.log(tekst.value); 
+  console.log(listeNavn.value); 
+  console.log(listeTekst.value); 
 
   var data = {
     Liste_Navn: listenavn,
