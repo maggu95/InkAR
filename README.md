@@ -1,2 +1,2 @@
 # inkAR.github.io
-AR app where user can overlay a tattoo for preview
+AR app where users can overlay a tattoo for preview.
