@@ -1,0 +1,16 @@
+<!doctype HTML>
+<html>
+<script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+<script src="https://raw.githack.com/jeromeetienne/AR.js/2.1.4/aframe/build/aframe-ar.js"></script>
+  <body style='margin : 0px; overflow: hidden;'>
+    <a-scene embedded arjs>
+    	<a-assets>
+  			<img id="texture" src="output-onlinepngtools.png">
+		</a-assets>
+      <a-marker preset='hiro'>
+          <a-plane src="#texture" position='0 0 -1' rotation='-90 0 0' material="transparent" scale='3 3 3'></a-plane>
+      </a-marker>
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
