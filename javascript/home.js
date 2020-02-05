@@ -1,3 +1,4 @@
+
   // konfigurasjon og sensitive opplysninger  
   //Burde  finne en løsning for å skjule denne informasjonen senere
   var firebaseConfig = {
