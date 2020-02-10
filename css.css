@@ -29,15 +29,17 @@ main {
 
 #knappContainer {
 	display: flex;
-	height: 40vh;
-	background-color: red;
+	height: 20vh;
 	margin: 0 0 0 15%;
 	width: 25%;
 }
 
 #knappContainer > button {
-	
+	margin: 5% 0% 5% 5%;
+
 }
+
+
 
 footer {
 	background-color: rgb(152, 156, 204);
