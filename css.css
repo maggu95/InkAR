@@ -19,12 +19,14 @@ main {
 
 #logo {
 	display: block;
-	
+	width: 85%;
   	height: auto;
   	margin: 0% 0 0 15%;
   	padding: 2% 0 0 0;
 }
-
+#phone{
+	float:right;
+}
 #logo > img  {
 	height: auto;
 	width: 40%;
