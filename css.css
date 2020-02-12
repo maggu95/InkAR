@@ -62,4 +62,7 @@ footer {
 	#knappContainer {
 		width: 80%;
 	}
+	#logo {
+	  	margin: 20% 0 0 15%;
+	}
 }
