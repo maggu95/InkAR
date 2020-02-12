@@ -19,9 +19,8 @@ main {
 
 #logo {
 	display: block;
-	
   	height: auto;
-  	margin: 0% 0 0 15%;
+  	margin: 0 0 0 15%;
   	padding: 2% 0 0 0;
 }
 
@@ -54,4 +53,13 @@ footer {
 	padding: 2% 0 2% 0;
 	font-family: "Segoe UI";
 	font-size: 10pt;
+}
+
+@media (max-width: 641px) {
+	#logo > img  {
+		width: 80%;
+	}
+	#knappContainer {
+		width: 80%;
+	}
 }
