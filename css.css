@@ -18,7 +18,7 @@ main {
 }
 
 #logo {
-	flex: 1 100%;
+	display: block;
   	height: 20vh;
   	margin: 2% 0 0 15%;
 }
@@ -34,7 +34,7 @@ main {
 
 #knappContainer {
 	display: block;
-	margin: 0 0 0 15%;
+	margin: 20% 0 0 15%;
 	object-fit: contain;
 	width: 40%;
 	height: 250px;
