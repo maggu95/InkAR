@@ -18,14 +18,15 @@ main {
 }
 
 #logo {
-	display: block;
+	display: flex;
+	flex: 1 100%;
   	height: 20vh;
   	margin: 2% 0 0 15%;
 }
 
 #logo > img  {
 	height: auto;
-	width: auto;
+	width: 45%;
 }
 
 #inkar {
@@ -34,7 +35,7 @@ main {
 
 #knappContainer {
 	display: block;
-	margin: 20% 0 0 15%;
+	margin: 0 0 0 15%;
 	object-fit: contain;
 	width: 40%;
 	height: 250px;
