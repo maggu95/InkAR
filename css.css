@@ -55,7 +55,7 @@ footer {
 	font-size: 10pt;
 }
 
-@media (max-width: 641px) {
+@media (max-width: 1000px) {
 	#logo > img  {
 		width: 80%;
 	}
