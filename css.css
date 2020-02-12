@@ -23,6 +23,11 @@ main {
   	margin: 2% 0 0 15%;
 }
 
+#logo > img  {
+	height: auto;
+	width: auto;
+}
+
 #inkar {
 	height: 40vh;
 }
