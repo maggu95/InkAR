@@ -70,4 +70,7 @@ footer {
 	#logo {
 	  	margin: 20% 0 0 15%;
 	}
+	#phone {
+		display: none;
+	}
 }
