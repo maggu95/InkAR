@@ -18,19 +18,16 @@ main {
 }
 
 #logo {
-	display: flex;
-	flex: 1 100%;
+	display: block;
+	flex: auto;
   	height: auto;
-  	margin: 2% 0 0 15%;
+  	margin: 0% 0 0 15%;
+  	padding: 2% 0 0 0;
 }
 
 #logo > img  {
 	height: auto;
 	width: 40%;
-}
-
-#inkar {
-	height: 40vh;
 }
 
 #knappContainer {
