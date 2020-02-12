@@ -30,13 +30,12 @@ main {
 #knappContainer {
 	display: flex;
 	height: 40vh;
-	background-color: red;
-	margin: 0 0 0 15%;
-	width: 25%;
+	margin: 0 0 0 10%;
+	width: auto;
 }
 
-#knappContainer > button {
-	
+#knappContainer > a {
+  	display: flex;
 }
 
 footer {
