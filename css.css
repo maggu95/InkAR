@@ -73,17 +73,17 @@ footer > img {
 }
 
 @media (max-width: 1024px) {
-	#logo > img  {
-		width: 80%;
-	}
-	#knappContainer {
-		width: 80%;
-	}
 	#logo {
 	  	margin: 20% 0 0 15%;
 	}
-	#phone {
+	#logo > img  {
+		width: 80%;
+	}
+	#logo > img:last-child  {
 		display: none;
+	}
+	#knappContainer {
+		width: 80%;
 	}
 	footer > img {
 		width: 20%;
