@@ -61,6 +61,7 @@ footer {
 }
 
 #footer {
+	height: auto;
 	width: 10%;
 }
 
@@ -76,5 +77,8 @@ footer {
 	}
 	#phone {
 		display: none;
+	}
+	#footer {
+	width: 20%;
 	}
 }
