@@ -64,6 +64,7 @@ footer {
 	font-family: "Segoe UI";
 	font-size: 10pt;
 	color: rgb(81, 81, 84);
+	text-decoration: none;
 	-webkit-font-smoothing: antialiased;
 }
 
