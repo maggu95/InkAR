@@ -4,7 +4,6 @@
 }
 
 body {
-	background: black;
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
@@ -25,12 +24,14 @@ main {
   	margin: 0 0 0 15%;
   	padding: 2% 0 0 0;
 }
-#phone{
-	float:right;
-}
+
 #logo > img  {
 	height: auto;
 	width: 40%;
+}
+
+#logo > img:last-child {
+	float: right;
 }
 
 #knappContainer {
@@ -63,9 +64,10 @@ footer {
 	font-family: "Segoe UI";
 	font-size: 10pt;
 	color: rgb(81, 81, 84);
+	-webkit-font-smoothing: antialiased;
 }
 
-#footer {
+footer > img {
 	height: auto;
 	width: 10%;
 }
@@ -83,7 +85,7 @@ footer {
 	#phone {
 		display: none;
 	}
-	#footer {
-	width: 20%;
+	footer > img {
+		width: 20%;
 	}
 }
