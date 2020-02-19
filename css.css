@@ -77,11 +77,10 @@ footer > img {
 	#logo {
 	  	margin: 20% auto 0 auto;
 	}
-	#logo > img  {
+	#logo > img {
 		width: 80%;
-		margin: 0 auto 0 auto;
 	}
-	#logo > img:last-child  {
+	#logo > img:last-child {
 		display: none;
 	}
 	#knappContainer {
