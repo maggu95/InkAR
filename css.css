@@ -114,4 +114,7 @@ footer > img {
 	footer > img {
 		width: 20%;
 	}
+	.container {
+		margin: -5% 0 0 -14%;
+	}
 }
