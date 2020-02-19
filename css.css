@@ -3,7 +3,26 @@
 	margin: 0;
 }
 
+.container {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.text {
+  font-weight: 100;
+  font-size: 28px;
+  color: rgb(69,69,69);
+}
+
+.dud {
+  color: #757575;
+}
+
 body {
+	font-family: 'Segoe UI';
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
