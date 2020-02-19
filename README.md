@@ -6,3 +6,4 @@ Compatibility
 The AR app is not compatable with the following browsers: 
 
 Iphone - Firefox 73 
+og 
