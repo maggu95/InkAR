@@ -3,6 +3,21 @@
 	margin: 0;
 }
 
+body {
+	font-family: 'Segoe UI';
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+main {
+	background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, darkgrey 100%);
+	flex: 1 100%;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
 .container {
   height: 100%;
   width: 100%;
@@ -20,21 +35,6 @@
 
 .dud {
   color: #757575;
-}
-
-body {
-	font-family: 'Segoe UI';
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-}
-
-main {
-	background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, darkgrey 100%);
-	flex: 1 100%;
-	display: flex;
-	min-height: 100vh;
-	flex-direction: column;
 }
 
 #logo {
