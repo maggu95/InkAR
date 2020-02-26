@@ -57,17 +57,30 @@ body {
 #mainFormat {
     min-height: 100vh; 
     display: grid;
-    grid-template-areas:    'header header header header'
-                            'aside main main main'   
-                            'aside main main main' 
-                            'aside main main main';
+    grid-template-areas:    'logo overskrift overskrift overskrift'
+                            'sidebar hoved hoved hoved'   
+                            'sidebar hoved hoved hoved' 
+                            'sidebar hoved hoved hoved';
 }
 
 #logo {
-	display: block;
-	width: 85%;
-  	height: auto;
-  	padding: 2% 0 0 15%;
+grid-area: logo;
+background-color:red; 
+}
+
+#overskrift {
+	grid-area: overskrift; 
+	background-color: blue;
+}
+
+#sidebar{
+	grid-area: sidebar;
+	background-color: black;
+}
+
+#hoved{
+	grid-area: hoved;
+	background-color: green;
 }
 
 #logo > img  {
