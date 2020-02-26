@@ -9,7 +9,7 @@ body {
 }
 
 main {
-	
+
 }
 
 .container {
@@ -18,7 +18,7 @@ main {
   justify-content: center;
   align-items: center;
   display: flex;
-  padding: 0 0 5% 0;
+  padding: 3% 0 3% 0;
 }
 
 .text {
@@ -65,7 +65,7 @@ main {
 	margin: 1% 0 0 15%;
 	object-fit: contain;
 	width: 50%;
-	height: 250px;
+	height: 100%;
 }
 
 .knapp > img {
@@ -114,14 +114,14 @@ footer > img {
 		display: none;
 	}
 	#knappContainer {
-		width: 85%;
-		margin: 1% auto 0 auto;
+		width: 90%;
+		margin: 1% 0 0 15%;
 	}
 	footer > img {
 		width: 20%;
 	}
 	.container {
-		margin: -5% 0 0 -14%;
+	  	padding: 10% 0 3% 0%;
 	}
 }
 
