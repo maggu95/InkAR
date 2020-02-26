@@ -7,29 +7,7 @@ body {
 	font-family: 'Segoe UI';
 	min-height: 100vh;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*
 .container {
   height: 100%;
   width: 100%;
@@ -44,7 +22,7 @@ body {
   font-size: 28px;
   color: rgb(69,69,69);
 }
-
+*/
 .dud {
   color: #757575;
 }
@@ -54,44 +32,63 @@ body {
 	background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, darkgrey 100%);
 }
 
-#mainFormat {
+.innhold {
     min-height: 100vh; 
     display: grid;
-    grid-template-areas:    'logo overskrift overskrift overskrift'
-                            'sidebar hoved hoved hoved'   
-                            'sidebar hoved hoved hoved' 
-                            'sidebar hoved hoved hoved';
+    grid-template-areas:    'logo overskrift overskrift overskrift overskrift overskrift overskrift overskrift overskrift'
+                            'sidebar hoved hoved hoved hoved hoved hoved hoved hoved'   
+                            'sidebar hoved hoved hoved hoved hoved hoved hoved hoved' 
+							'sidebar hoved hoved hoved hoved hoved hoved hoved hoved'
+							'sidebar hoved hoved hoved hoved hoved hoved hoved hoved'
+							'sidebar hoved hoved hoved hoved hoved hoved hoved hoved'
+							'sidebar hoved hoved hoved hoved hoved hoved hoved hoved'
+							'sidebar hoved hoved hoved hoved hoved hoved hoved hoved'
+							'sidebar hoved hoved hoved hoved hoved hoved hoved hoved'
+							'sidebar hoved hoved hoved hoved hoved hoved hoved hoved';
 }
 
-#logo {
-grid-area: logo;
-background-color:red; 
+.logo {
+	grid-area: logo; 
+	text-align: center;
+	border-right: solid black;
+	border-bottom: solid black;
 }
 
-#overskrift {
+.logo > img {
+	width: 40vh;
+	margin: 2vh;
+} 
+
+.overskrift {
 	grid-area: overskrift; 
-	background-color: blue;
+	border-bottom: solid black;
 }
 
-#sidebar{
+.overskrift > h1 {
+	margin-top: 10vh;
+	margin-left: 5vh;
+	font-size: 15vh;
+}
+
+.sidebar{
 	grid-area: sidebar;
-	background-color: black;
+	border-right: solid black;
 }
 
-#hoved{
-	grid-area: hoved;
-	background-color: green;
+.sidebar > button {
+	width: 80%;
+	height: 10vh;
+	margin-top: 5vh;
+	margin-left: 5vh;
+	justify-content: center;
+}
+.hoved{
+	grid-area: hoved;	
 }
 
-#logo > img  {
-	height: auto;
-	width: 40%;
-}
 
-#logo > img:last-child {
-	float: right;
-}
 
+/*
 #knappContainer {
 	display: block;
 	margin: 1% 0 0 15%;
@@ -162,3 +159,4 @@ footer > img {
 		margin: -5% 0 0 -14%;
 	}
 }
+*/
