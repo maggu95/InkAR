@@ -53,8 +53,8 @@ class TextScramble {
 }
 
 const phrases = [
-  'Your mom',
-  'Gey 😂😂😂'
+  'Your tattoo..',
+  'Is the map of your lifes journey'
 ]
 
 const el = document.querySelector('.text')
