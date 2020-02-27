@@ -53,9 +53,8 @@ class TextScramble {
 }
 
 const phrases = [
-  'Previewing your future tattoo,',
-  'has never been easier...',
-  'With inkAR you will never regret a tattoo again.'
+  'Your mom',
+  'Gey 😂😂😂'
 ]
 
 const el = document.querySelector('.text')
