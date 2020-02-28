@@ -22,7 +22,6 @@ body {
   font-size: 28px;
   color: rgb(69,69,69);
 }
-*/
 .dud {
   color: #757575;
 }
@@ -31,6 +30,7 @@ body {
 	min-height: 100vh;
 	background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, darkgrey 100%);
 }
+*/
 
 .innhold {
     min-height: 100vh; 
@@ -45,13 +45,16 @@ body {
 							'sidebar hoved hoved hoved hoved hoved hoved hoved hoved'
 							'sidebar hoved hoved hoved hoved hoved hoved hoved hoved'
 							'sidebar hoved hoved hoved hoved hoved hoved hoved hoved';
+	outline: 12px solid white;
+    outline-offset: -12px;
+    background-color: rgb(250, 250, 250);
 }
 
 .logo {
 	grid-area: logo; 
 	text-align: center;
-	border-right: solid black;
-	border-bottom: solid black;
+	border-right: 12px solid white;
+	border-bottom: 12px solid white;
 }
 
 .logo > img {
@@ -61,7 +64,7 @@ body {
 
 .overskrift {
 	grid-area: overskrift; 
-	border-bottom: solid black;
+	border-bottom: 12px solid white;
 }
 
 .overskrift > h1 {
@@ -72,7 +75,7 @@ body {
 
 .sidebar{
 	grid-area: sidebar;
-	border-right: solid black;
+	border-right: 12px solid white;
 }
 
 .sidebar > button {
@@ -83,6 +86,7 @@ body {
 	justify-content: center;
 }
 .hoved{
+	padding: 5%;
 	grid-area: hoved;	
 }
 
@@ -116,7 +120,7 @@ body {
   	-webkit-transform: scale(1.1);
   	transform: scale(1.1);
 }
-
+*/
 footer {
 	background-color: rgb(245, 245, 247);
 	text-align: center;
@@ -132,7 +136,7 @@ footer > img {
 	height: auto;
 	width: 10%;
 }
-
+/*
 @media (max-width: 1024px) {
 	#logo {
 	  	margin: 20% auto 0 auto;
