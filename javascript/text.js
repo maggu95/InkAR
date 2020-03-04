@@ -56,7 +56,7 @@ const phrases = [
   'your tattoo..',
   '..a map of your lifes journey',
   'think before you ink',
-  ' '
+  ''
 ]
 
 const el = document.querySelector('.text')
