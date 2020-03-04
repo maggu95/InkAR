@@ -53,8 +53,10 @@ class TextScramble {
 }
 
 const phrases = [
-  'Your tattoo..',
-  'Is the map of your lifes journey'
+  'your tattoo..',
+  '..a map of your lifes journey',
+  'think before you ink',
+  ''
 ]
 
 const el = document.querySelector('.text')
@@ -63,7 +65,7 @@ const fx = new TextScramble(el)
 let counter = 0
 const next = () => {
   fx.setText(phrases[counter]).then(() => {
-    setTimeout(next, 3000)
+    setTimeout(next, 2500)
   })
   counter = (counter + 1) % phrases.length
 }

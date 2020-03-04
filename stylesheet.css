@@ -58,6 +58,8 @@ main {
 
 #logo > img:last-child {
 	float: right;
+	width: 25%;
+	padding: 10% 15% 0 0	;
 }
 
 #knappContainer {
