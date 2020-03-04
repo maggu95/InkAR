@@ -53,8 +53,9 @@ class TextScramble {
 }
 
 const phrases = [
-  'Your tattoo..',
-  'Is the map of your lifes journey'
+  'your tattoo..',
+  '..a map of your lifes journey',
+  'think before you ink'
 ]
 
 const el = document.querySelector('.text')
