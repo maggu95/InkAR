@@ -90,6 +90,13 @@ body {
 	grid-area: hoved;	
 }
 
+.hoved > img {
+	height: 60vh;
+	width: 100vh;
+	float: right; 
+
+}
+
 
 
 /*
