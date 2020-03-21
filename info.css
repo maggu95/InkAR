@@ -84,7 +84,7 @@ body {
 	justify-content: center;
 }
 .hoved{
-	padding-top: 5%;
+	margin-top: 3%;
 	grid-area: hoved;	
 }
 
