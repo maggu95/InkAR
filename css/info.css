@@ -43,8 +43,7 @@ body {
 							'sidebar hoved hoved hoved hoved hoved hoved hoved hoved'
 							'sidebar hoved hoved hoved hoved hoved hoved hoved hoved'
 							'sidebar hoved hoved hoved hoved hoved hoved hoved hoved'
-							'sidebar hoved hoved hoved hoved hoved hoved hoved hoved'
-							'sidebar hoved hoved hoved hoved hoved hoved hoved hoved';
+							;
 }
 
 .logo {
@@ -70,20 +69,38 @@ body {
 .sidebar{
 	grid-area: sidebar;
 	
+	width: 30vh;
+	
 }
-
-.sidebar > button {
+#Om_oss {
 	width: 30vh;
 	height: 10vh;
 	margin-top: 5vh;
 	margin-left: 5vh;
-
-
+}
+#faq {
+	width: 30vh;
+	height: 10vh;
+	margin-top: 5vh;
+	margin-left: 5vh;
+}
+#Kontakt{
+	width: 30vh;
+	height: 10vh;
+	margin-top: 5vh;
+	margin-left: 5vh;
+}
+#privacy {
+	width: 30vh;
+	height: 10vh;
+	margin-top: 5vh;
+	margin-left: 5vh;
 }
 
 .hoved{
 	padding-top: 5%;
 	grid-area: hoved;	
+	
 }
 
 #oss {
@@ -108,7 +125,7 @@ footer > img {
 	height: auto;
 	width: 10%;
 }
-
+/*
 @media (max-width: 1024px) {
 
 	.innhold {
