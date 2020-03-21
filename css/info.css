@@ -54,7 +54,6 @@ body {
 .logo {
 	grid-area: logo; 
 	text-align: center;
-	
 }
 
  img {
@@ -79,13 +78,13 @@ body {
 }
 
 .sidebar > button {
-	width: 80%;
+	width: 50vh;
 	height: 10vh;
 	margin-top: 5vh;
 	margin-left: 5vh;
 	justify-content: center;
 }
-.hoved{
+.hoved {
 	margin-top: 3%;
 	grid-area: hoved;	
 }
