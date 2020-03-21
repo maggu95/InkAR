@@ -54,16 +54,18 @@ body {
 .logo {
 	grid-area: logo; 
 	text-align: center;
-
+	
 }
 
-.logo > img {
+ img {
+	height:40vh;
 	width: 40vh;
-	margin: 2vh;
+
 } 
 
 .overskrift {
 	grid-area: overskrift; 
+
 }
 
 .overskrift > h1 {
