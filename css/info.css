@@ -84,8 +84,13 @@ body {
 	margin-left: 5vh;
 	justify-content: center;
 }
+<<<<<<< HEAD:css/info.css
 .hoved {
 	margin-top: 3%;
+=======
+.hoved{
+	padding-top: 5%;
+>>>>>>> parent of 09018bd... La til ekstra kontak informasjon:info.css
 	grid-area: hoved;	
 }
 
