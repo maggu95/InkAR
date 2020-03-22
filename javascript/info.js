@@ -40,4 +40,13 @@ var data = {
 }
 
 firebaseRef.push(data);
+
+$('#Input1').val(""); 
+
+$('#input2').val(""); 
+
+$('#input3').val(""); 
+
+alert("Takk for tilbakemelding! " + "\n" + "Vår team vil så snart som mulig addressere din tilbakemelding"); 
+
 }
