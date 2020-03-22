@@ -1,5 +1,4 @@
 
-alert("Test"); 
 
 var skjema =
 '<form>'
