@@ -136,7 +136,7 @@ footer > img {
 .topnav {
   padding: 2%;
   overflow: hidden;
-  background-color: lightgrey;
+  background: rgb(225,225,225);
   position: relative;
   text-align: center;	
 }
@@ -155,7 +155,7 @@ footer > img {
 }
 
 .topnav a.icon {
-  background: grey;
+  background: rgb(200,200,200);
   display: block;
   position: absolute;
   left: 0;
