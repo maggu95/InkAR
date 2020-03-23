@@ -39,4 +39,9 @@ var data = {
 }
 
 firebaseRef.push(data);
+
+$('#Input1').val("");
+$('#input2').val("");
+$('#input3').val("");
+alert("Takk for din tilbakemelding"+ "\n" + "Vår team vil ta kontakt snares mulig" );  
 }
