@@ -1,7 +1,4 @@
 
-alert("Test"); 
-
-
 var skjema =
 '<form>'
 +'<div class="form-group">'
