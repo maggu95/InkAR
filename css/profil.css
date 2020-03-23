@@ -6,10 +6,13 @@
 main {
 	min-height: 100vh;
 	background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, darkgrey 100%);
+	font-family: "Segoe UI";
+	font-weight: bold;
 }
 
 .pw {
 	float: left;
+	font-weight: normal;
 }
 
 #logo{
@@ -19,7 +22,7 @@ main {
    text-align: center;
 }
 
-#skjema{
+#skjema {
     width: 30%;
     text-align: center;
     margin: 5% 0 5% 35%;
@@ -29,6 +32,15 @@ main {
     height: 40%;
     width: 40%;
     margin-top: 0.65%;
+}
+
+#knapper {
+	margin-top: 5%;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
 }
 
 footer {
