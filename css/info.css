@@ -134,6 +134,8 @@ footer > img {
 	padding: 5%;
 	font-size: 20pt;
 	overflow: auto;
+	background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(240,240,240,1) 50%, rgba(255,255,255,1) 100%);
+
 }
 
 .mobile-container {
