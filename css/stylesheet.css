@@ -6,6 +6,7 @@
 body {
 	font-family: 'Segoe UI';
 	min-height: 100vh;
+	background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, darkgrey 100%);
 }
 
 main {
@@ -33,7 +34,7 @@ main {
 
 #mainHome {
 	min-height: 100vh;
-	background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, darkgrey 100%);
+	
 }
 
 #mainInfo {
@@ -63,7 +64,7 @@ main {
 #logo > img:last-child {
 	float: right;
 	width: 25%;
-	padding: 10% 15% 0 0	;
+	padding: 10% 15% 0 0;
 }
 
 #knappContainer {
@@ -102,6 +103,7 @@ footer {
 	color: rgb(81, 81, 84);
 	text-decoration: none;
 	-webkit-font-smoothing: antialiased;
+	display: block;
 }
 
 footer > img {
@@ -128,5 +130,8 @@ footer > img {
 	}
 	.container {
 	  	padding: 10% 0 3% 0%;
+	}
+	footer {
+		width: 110%;
 	}
 }
