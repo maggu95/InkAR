@@ -2,12 +2,16 @@
 <html> 
 <head>
 <meta charset="utf-8">
+<meta name="google-signin-client_id" content="372845818600-49sek8rqocfgdrfablrfd08db0ui1i4h.apps.googleusercontent.com">
 <title>inkAR® Norge</title>
 <link rel="stylesheet" type="text/css" href="css/profil.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
 </head>
 <body>
+
+<main>
 
 <div id="logo">
     <a href="home.html"><img src="bilder/inkar.png"> </a>
@@ -15,17 +19,20 @@
 <div id="skjema">
     <form>
         <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
+          <label for="exampleInputEmail1">E-Mail addresse:</label>
           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
         </div>
         <div class="form-group">
-          <label for="exampleInputPassword1">Password</label>
+          <label for="exampleInputPassword1">Passord:</label>
           <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
         </div>
-        <div class="form-check">
+        <div class="form-check pw">
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
           <label class="form-check-label" for="exampleCheck1">Husk passord</label>
         </div>
+
+        <div class="g-signin2" data-onsuccess="onSignIn">Logg inn her</div>
+        
         <br>
         <div id="knapper">
         <button type="submit" class="btn btn-primary">logg inn</button>
@@ -34,9 +41,8 @@
       </form>
 </div>
 
+</main>
 
-
-<div id="bunn">
 <footer>
     <p>
     inkAR® Norge. Gullbringvegen 36, 3800 Bø i Telemark. Foretaksnummer: 123 456 789.
@@ -47,6 +53,6 @@
     </p>
     <img src="bilder/coollogo_com-104711916.png" alt="inkarembossed">
 </footer>
-</div>    
+   
 </body>
 </html>
