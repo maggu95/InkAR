@@ -10,15 +10,14 @@
 <body>
 
 <div class="innhold">
-
-	<div class="logo"> 
-		<a href="home.html">  
+	<div id="logo">
+	<a href="home.html">  
 		<img id="bildelogo" src="bilder/inkar.png">
 		</a>
-	</div> 
-
-
-	<div class="overskrift"><h1>Info Om Oss</h1></div>
+	</div>
+	<div class="overskrift">
+		<h1>Info Om Oss</h1>
+	</div>
 
 	<div class="sidebar"> 
 		<button id="Om_oss">Info Om oss</button>
@@ -30,7 +29,7 @@
 
 
 	<div class="hoved">
-		<img id ="oss"src ="bilder/oss.jpeg">
+		<img id ="oss" src ="bilder/oss.jpeg">
 			<p>Vi er en gruppe med teknologi  entusiastiske mennesker som ikke enda hadde fått seg tattovering. Det var da vi kom med ideen om å lage denne appen
 			<br> <p>I InkAr fikk vi en visjon om å øke sikkerheten rundt det store valget, nemlig hvilken tattoering å ta.</p> 
 			<br><p>Kommer den til å se bra ut? Hvor skal jeg ta den? Dette er grunnlaget bak vår app. Vår gruppe er lokalisert i Bø i midt-telemark kommune.</p>
@@ -40,6 +39,8 @@
 
 
 </div>
+
+
 
 <script>
 $("#faq").click(function(){
@@ -57,14 +58,14 @@ $("#Kontakt").click(function(){
 
 $("#privacy").click(function(){
 	$(".overskrift").html("<h1>Privacy</h1>");
-	$(".hoved").html("<p >At Inkar&co, accessible from www.herokuapp.inkar.com, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Inkar&amp;co and how we use it. </p> <br> <p> By using our website, you hereby consent to our Privacy Policy and agree to its terms.</p>" +
+	$(".hoved").html("<p>At Inkar&co, accessible from www.herokuapp.inkar.com, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Inkar&amp;co and how we use it. </p> <br> <p> By using our website, you hereby consent to our Privacy Policy and agree to its terms.</p>" +
 	"<br> <p>InkAr is a publication that celebrates the art of tattoos and the artists that make them. If you wish to inquire about tattoo design, price quotes, or making an appointment, please contact your preferred tattoo studio or tattoo artist directly. We use your information to deliver our services, like processing the terms you search for in order to return results or helping you share content by suggesting recipients from your contacts.</p> "+
 	"<br> <p>If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us. </p>");
   });
 
 $("#Om_oss").click(function(){
 	$(".overskrift").html("<h1>Info Om Oss</h1>");
-	var omOss = ' <img id="oss"src="bilder/oss.jpeg"> <p>Vi er en gruppe med teknologi  entusiastiske mennesker som ikke enda hadde fått seg tattovering. Det var da vi kom med ideen om å lage denne appen"<p>I InkAr fikk vi en visjon om å øke sikkerheten rundt det store valget, nemlig hvilken tattoering å ta.</p> <br> <p>Kommer den til å se bra ut? Hvor skal jeg ta den? Dette er grunnlaget bak vår app. Vår gruppe er lokalisert i Bø i midt-telemark kommune.</p><p>Vårt team er satt opp av system arkitekt, programmerere, designer og support. For å komme i kontakt med oss, se kontakt.</p> ';	
+	var omOss = '<img id="oss" src="bilder/oss.jpeg"> <p>Vi er en gruppe med teknologi  entusiastiske mennesker som ikke enda hadde fått seg tattovering. Det var da vi kom med ideen om å lage denne appen"<p>I InkAr fikk vi en visjon om å øke sikkerheten rundt det store valget, nemlig hvilken tattoering å ta.</p> <br> <p>Kommer den til å se bra ut? Hvor skal jeg ta den? Dette er grunnlaget bak vår app. Vår gruppe er lokalisert i Bø i midt-telemark kommune.</p><p>Vårt team er satt opp av system arkitekt, programmerere, designer og support. For å komme i kontakt med oss, se kontakt.</p> ';	
 	$(".hoved").html(omOss);
   });
 </script>
