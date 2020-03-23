@@ -122,9 +122,12 @@ footer > img {
 
 /* mobil */
 .overskrift2 {
-	color: white;
+	color: black;
+	padding-bottom: 10%;
+	padding-left: 20%;
 	font-size: 60pt;
 	display: block;
+	border-bottom: 2px solid black
 }
 
 .hoved2 {
@@ -147,7 +150,7 @@ footer > img {
 .topnav {
   padding-top: 10%;
   overflow: hidden;
-  background: rgb(225,225,225);
+  background-color: white;
   position: relative;
   text-align: center;
 }
@@ -157,17 +160,24 @@ footer > img {
 }
 
 .topnav a {
-  color: white;
+  color: black;
   padding: 14px 16px;
   text-decoration: none;
+  width: 50%;
   display: block;
   text-align: left;
+  background-color: white;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
 .topnav a.icon {
-  padding: 9.9%;
+	border: none;
+  width: auto;
+  margin-top: 2%;
+  padding: 13%;
   font-size: 20pt;
-  background: rgb(200,200,200);
+  background-color: white;
   display: block;
   position: absolute;
   left: 0;
@@ -175,7 +185,7 @@ footer > img {
 }
 
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: white;
   color: black;
 }
 
