@@ -115,6 +115,8 @@ footer > img {
 /* mobil */
 .overskrift2 {
 	color: white;
+	font-size: 60pt;
+	display: block;
 }
 
 .hoved2 {
@@ -134,10 +136,11 @@ footer > img {
 }
 
 .topnav {
+  padding-top: 10%;
   overflow: hidden;
   background: rgb(225,225,225);
   position: relative;
-  text-align: center;	
+  text-align: center;
 }
 
 .topnav #myLinks {
@@ -153,6 +156,8 @@ footer > img {
 }
 
 .topnav a.icon {
+  padding: 9.9%;
+  font-size: 20pt;
   background: rgb(200,200,200);
   display: block;
   position: absolute;
