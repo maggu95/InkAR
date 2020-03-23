@@ -47,7 +47,7 @@ body {
 }
 
 .overskrift > h1 {
-	font-size: 15vh;
+	font-size: 70pt;
 }
 
 .sidebar{
@@ -112,5 +112,121 @@ footer > img {
 	width: 10%;
 }
 
+/* mobil */
+.overskrift2 {
+	color: white;
+}
+
+.hoved2 {
+	padding: 5%;
+}
+
+.mobile-container {
+  min-height: 100vh;
+  width: auto;
+  margin: auto;
+  background-color: white;
+  height: 500px;
+  color: black;
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: lightgrey;
+  position: relative;
+  text-align: center;	
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  text-align: left;
+}
+
+.topnav a.icon {
+  background: grey;
+  display: block;
+  position: absolute;
+  left: 0;
+  padding: 1.7%;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+@media (min-width: 1024px) {
+  .mobile-container {
+  display: none;
+}
+
+.topnav {
+  display: none;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  display: none;
+}
+
+.topnav a.icon {
+  display: none;
+}
+
+.topnav a:hover {
+  display: none;
+}
+
+.active {
+  display: none;
+}
+}
+
+
 @media (max-width: 1024px) {
+	#logo {
+		display: none;
+	}
+	.overskrift {
+		display: none;
+	}
+	.sidebar {
+		display: none;
+	}
+	#Om_oss {
+		display: none;
+	}
+	#faq {
+		display: none;
+	}
+	#Kontakt {
+		display: none;
+	}
+	#privacy {
+		display: none;
+	}
+	.hoved {
+		display: none;
+	}
+	.innhold {
+		display: none;
+	}
 }
