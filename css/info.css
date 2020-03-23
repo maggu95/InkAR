@@ -127,10 +127,11 @@ footer > img {
 
 .mobile-container {
   min-height: 100vh;
+  max-height: 100vh;
+  overflow: auto;
   width: auto;
   margin: auto;
   background-color: white;
-  height: 500px;
   color: black;
   border-radius: 10px;
 }
