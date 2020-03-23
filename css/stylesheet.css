@@ -70,7 +70,6 @@ main {
 #knappContainer {
 	display: block;
 	margin: 1% 0 0 15%;
-	object-fit: contain;
 	width: 50%;
 	height: 100%;
 }
@@ -79,8 +78,6 @@ main {
 	padding-right: 2%;
 	height: auto;
 	width: 15%;
-  	display: inline-block;
-  	vertical-align: middle;
   	-webkit-transform: perspective(1px) translateZ(0);
   	transform: perspective(1px) translateZ(0);
   	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -122,16 +119,13 @@ footer > img {
 		display: none;
 	}
 	#knappContainer {
-		width: 90%;
-		margin: 1% 0 0 15%;
+		width: 80%;
+		margin: 1% 0 0 19%;
 	}
 	footer > img {
 		width: 20%;
 	}
 	.container {
 	  	padding: 10% 0 3% 0%;
-	}
-	footer {
-		width: 110%;
 	}
 }
