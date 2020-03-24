@@ -18,14 +18,13 @@ main {
 #logo{
 	padding-top: 5vh;
     width: 100%;
-   margin: auto;
    text-align: center;
 }
 
 #skjema {
     width: 30%;
     text-align: center;
-    margin: 5% 0 5% 35%;
+    margin: 5% 0 0 35%;
 }
 
 #googlelogin  {
@@ -47,6 +46,7 @@ main {
 	align-items: center;
 	align-content: center;
 	text-align: center;
+	padding-bottom: 20%;
 }
 
 footer {
