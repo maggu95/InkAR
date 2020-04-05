@@ -1,24 +1,45 @@
 <!DOCTYPE HTML>
 <html>
-<script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
 <script src="https://raw.githack.com/jeromeetienne/AR.js/2.1.4/aframe/build/aframe-ar.js"></script>
+<script src="https://unpkg.com/merge-images"></script>
+<script src="capture-video-frame.js"></script>
+
+  <style type="text/css">
+    .label{
+      position: absolute;
+      display: block;
+      z-index: 99;
+    }
+    .button{
+    	background-color: #4CAF50; /* Green */
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+    }
+  </style>
   <body style='margin : 0px; overflow: hidden;'>
     <a-scene embedded arjs>
-    	<a-assets>
-  			<img id="texture" src="bilder/tat5.png">
-		</a-assets>
+      <a-assets>
+        <img id="texture" src="bilder/tat5.png">
+    </a-assets>
       <a-marker preset='hiro'>
-          <a-plane src="#texture" position='0 0 -1' rotation='-90 0 0' material="transparent" scale='3 3 3'></a-plane>
+          <a-plane src='#texture' position='0 0 -1' rotation='-90 0 0' material="red" scale='1 1 1'></a-plane>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
-    <button onclick="up()" class="button" style="position: absolute; display:      block; z-index: 99; left: 60%; top: 90%;">up</button>
-      <button onclick="down()" class="button" style="position: absolute; display:      block; z-index: 99; left: 40%; top: 90%;">down</button>
-      <button onclick="screen()" class="button" style="position: absolute; display:      block; z-index: 99; left: 50%; top: 90%;">screen</button>
-
+      <button onclick="up()" class="button" style="position: absolute; display:      block; z-index: 99; left: 80%; top: 90%;">up</button>
+      <button onclick="down()" class="button" style="position: absolute; display:      block; z-index: 99; left: 20%; top: 90%;">down</button>
+      <button id="snap-button" class="button" style="position: absolute; display:      block; z-index: 99; left: 50%; top: 90%;">screenshot</button>
+      <a href="#" id="download-link" style="position: absolute; display: block; z-index: 99;">DOWNLOAD</a>
     <script type="text/javascript">
       var rota = 0;
       var a = 1;
+      
       function up(){
   			a += 0.1;
   			document.querySelector('a-plane').setAttribute('height', a);
@@ -30,8 +51,73 @@
         document.querySelector('a-plane').setAttribute('width', a);
       }
       function screen(){
-        document.querySelector('a-scene').components.screenshot.capture('perspective');
+        html2canvas(document.body).then(function(canvas) {
+               document.body.appendChild(canvas);
+            });
+        /*var canvas = document.querySelector('a-scene').components.screenshot.getCanvas('equirectangular');
+        var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream"); 
+        // here is the most important part because if you dont replace you will get a DOM 18 exception. 
+        window.location.href=image; // it will save locally
+        /*<input type="file" accept="image/*;capture=camera">
+        document.querySelector('a-scene').components.screenshot.capture('perspective');*/
       }
+      function resizeCanvas(origCanvas, width, height) {
+			let resizedCanvas = document.createElement("canvas");
+			let resizedContext = resizedCanvas.getContext("2d");
+
+			resizedCanvas.height = width;
+			resizedCanvas.width = height;
+
+			resizedContext.drawImage(origCanvas, 0, 0, width, height);
+			return resizedCanvas.toDataURL();
+		}
+
+		document.getElementById("snap-button").addEventListener("click", function() {
+			let aScene = document
+				.querySelector("a-scene")
+				.components.screenshot.getCanvas("perspective");
+			let frame = captureVideoFrame("video", "png");
+			aScene = resizeCanvas(aScene, frame.width, frame.height);
+			frame = frame.dataUri;
+			mergeImages([frame, aScene]).then(b64 => {
+				let link = document.getElementById("download-link", "png");
+				link.setAttribute("download", "AR.png");
+				link.setAttribute("href", b64);
+				link.click();
+			});
+		});
+		function captureVideoFrame(video, format, width, height) {
+        if (typeof video === 'string') {
+            video = document.querySelector(video);
+        }
+
+        format = format || 'jpeg';
+
+        if (!video || (format !== 'png' && format !== 'jpeg')) {
+            return false;
+        }
+
+        var canvas = document.createElement("CANVAS");
+
+        canvas.width = width || video.videoWidth;
+        canvas.height = height || video.videoHeight;
+        canvas.getContext('2d').drawImage(video, 0, 0);
+        var dataUri = canvas.toDataURL('image/' + format);
+        var data = dataUri.split(',')[1];
+        var mimeType = dataUri.split(';')[0].slice(5)
+
+        var bytes = window.atob(data);
+        var buf = new ArrayBuffer(bytes.length);
+        var arr = new Uint8Array(buf);
+
+        for (var i = 0; i < bytes.length; i++) {
+            arr[i] = bytes.charCodeAt(i);
+        }
+
+        var blob = new Blob([ arr ], { type: mimeType });
+        return { blob: blob, dataUri: dataUri, format: format, width: canvas.width, height: canvas.height };
+    };
   </script>
   </body>
+  
 </html>
