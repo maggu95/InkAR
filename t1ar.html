@@ -11,6 +11,16 @@
       display: block;
       z-index: 99;
     }
+    .button{
+    	background-color: #4CAF50; /* Green */
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+    }
   </style>
   <body style='margin : 0px; overflow: hidden;'>
     <a-scene embedded arjs>
@@ -22,9 +32,9 @@
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
-      <button onclick="up()" class="button" style="position: absolute; display:      block; z-index: 99; left: 90%; top: 90%;">up</button>
+      <button onclick="up()" class="button" style="position: absolute; display:      block; z-index: 99; left: 80%; top: 90%;">up</button>
       <button onclick="down()" class="button" style="position: absolute; display:      block; z-index: 99; left: 20%; top: 90%;">down</button>
-      <button id="snap-button" style="position: absolute; display:      block; z-index: 99; left: 50%; top: 90%;">screenshot</button>
+      <button id="snap-button" class="button" style="position: absolute; display:      block; z-index: 99; left: 50%; top: 90%;">screenshot</button>
       <a href="#" id="download-link" style="position: absolute; display: block; z-index: 99;">DOWNLOAD</a>
     <script type="text/javascript">
       var rota = 0;
