@@ -1,23 +1,32 @@
 <!DOCTYPE HTML>
 <html>
-<script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
 <script src="https://raw.githack.com/jeromeetienne/AR.js/2.1.4/aframe/build/aframe-ar.js"></script>
 <script src="https://unpkg.com/merge-images"></script>
 <script src="capture-video-frame.js"></script>
+
+  <style type="text/css">
+    .label{
+      position: absolute;
+      display: block;
+      z-index: 99;
+    }
+  </style>
   <body style='margin : 0px; overflow: hidden;'>
     <a-scene embedded arjs>
-    	<a-assets>
-  			<img id="texture" src="bilder/tat1.png">
-		</a-assets>
+      <a-assets>
+        <img id="texture" src="bilder/tat1.png">
+    </a-assets>
       <a-marker preset='hiro'>
-          <a-plane src="#texture" position='0 0 -1' rotation='-90 0 0' material="transparent" scale='3 3 3'></a-plane>
+          <a-plane src='#texture' position='0 0 -1' rotation='-90 0 0' material="red" scale='1 1 1'></a-plane>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
-    <button onclick="up()" class="button" style="position: absolute; display:      block; z-index: 99; left: 60%; top: 90%;">up</button>
+      <button onclick="up()" class="button" style="position: absolute; display:      block; z-index: 99; left: 60%; top: 90%;">up</button>
       <button onclick="down()" class="button" style="position: absolute; display:      block; z-index: 99; left: 40%; top: 90%;">down</button>
-      <button id="snap-button" style="position: absolute; display:      block; z-index: 99; left: 50%; top: 90%;">screen</button>
-  <script type="text/javascript">
+      <button id="snap-button" style="position: absolute; display:      block; z-index: 99; left: 50%; top: 90%;">screenshot</button>
+      <a href="#" id="download-link" style="position: absolute; display: block; z-index: 99;">DOWNLOAD</a>
+    <script type="text/javascript">
       var rota = 0;
       var a = 1;
       
@@ -100,4 +109,5 @@
     };
   </script>
   </body>
+  
 </html>
