@@ -12,7 +12,7 @@
       z-index: 99;
     }
     .button{
-    	background-color: #b3cce6; /* Green */
+    	background-color: #b3cce6;
 		border: none;
 		color: black;
 		padding: 15px 32px;
@@ -32,9 +32,9 @@
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
-      	  <button onclick="up()" class="button" style="position: absolute; display: block; z-index: 99; left: 80%; top: 93%; scale: 0.5;">up</button>
-          <button onclick="down()" class="button" style="position: absolute; display: block; z-index: 99; left: 0%; top: 93%; scale: 0.5;">down</button>
-          <button id="snap-button" class="button" style="position: absolute; display: block; z-index: 99; left: 34%; top: 93%; scale: 0.5;">screenshot</button>
+      	  <button onclick="up()" class="button" style="position: absolute; display: block; z-index: 99; left: 80%; top: 93%; ">up</button>
+          <button onclick="down()" class="button" style="position: absolute; display: block; z-index: 99; left: 0%; top: 93%; ">down</button>
+          <button id="snap-button" class="button" style="position: absolute; display: block; z-index: 99; left: 34%; top: 93%; ">screenshot</button>
           <a href="#" id="download-link" style="position: absolute; display: block; z-index: 99;">DOWNLOAD</a>
     <script type="text/javascript">
       var rota = 0;
@@ -54,12 +54,6 @@
         html2canvas(document.body).then(function(canvas) {
                document.body.appendChild(canvas);
             });
-        /*var canvas = document.querySelector('a-scene').components.screenshot.getCanvas('equirectangular');
-        var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream"); 
-        // here is the most important part because if you dont replace you will get a DOM 18 exception. 
-        window.location.href=image; // it will save locally
-        /*<input type="file" accept="image/*;capture=camera">
-        document.querySelector('a-scene').components.screenshot.capture('perspective');*/
       }
       function resizeCanvas(origCanvas, width, height) {
 			let resizedCanvas = document.createElement("canvas");
