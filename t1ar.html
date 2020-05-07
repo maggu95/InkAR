@@ -39,17 +39,19 @@
     <script type="text/javascript">
       var rota = 0;
       var a = 1;
-      
+      /* scale funksjon som setter opp a sin verdi også setter a som attribute til tatoo*/
       function up(){
-  			a += 0.1;
-  			document.querySelector('a-plane').setAttribute('height', a);
+  	a += 0.1;
+  	document.querySelector('a-plane').setAttribute('height', a);
         document.querySelector('a-plane').setAttribute('width', a);
-  		}
+      }
+      /* samme som up bare andre veien om */    
       function down(){
         a -= 0.1;
         document.querySelector('a-plane').setAttribute('height', a);
         document.querySelector('a-plane').setAttribute('width', a);
       }
+	/* screenshot funksjon som med bruk av html2canvas capture video frame og en hjelpe funksjon for sammensetning av bilde*/    
       function screen(){
         html2canvas(document.body).then(function(canvas) {
                document.body.appendChild(canvas);
